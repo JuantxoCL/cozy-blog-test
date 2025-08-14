@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  color: #3a2f2f;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f5e0d3;
+}
+
+.logo img {
+  height: 120px; /* tamaño más grande en desktop */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 80px; /* un poco más grande también en móvil */
+  }
+}
+
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #3a2f2f;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #b36b47;
+}
+
+/* HERO SECTION */
+.blog-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6b89c;
+  color: #3a2f2f;
+}
+
+/* BLOG LIST */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+article img {
+  width: 100%;
+  display: block;
+}
+
+article h2 {
+  margin: 15px;
+}
+
+article p {
+  margin: 0 15px 15px;
+}
+
+.read-btn {
+  display: block;
+  margin: 0 15px 15px;
+  padding: 10px 15px;
+  background-color: #e6b89c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #3a2f2f;
+  font-weight: bold;
+}
+
+.read-btn:hover {
+  background-color: #d9a77b;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f5e0d3;
+  font-size: 0.9rem;
+}
