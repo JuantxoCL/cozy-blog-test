@@ -1,57 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flick and Puff | Cozy Ideas Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flick & Puff — Cozy Movie Nights at Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Flick & Puff — everything you need for cozy movie nights at home: blankets, lights, mugs, popcorn gear, themed bundles, and blog ideas."/>
 </head>
 <body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <img class="brand__logo" src="https://github.com/JuantxoCL/Data-Science/blob/main/FLICKANDPUFFLOGO.png?raw=true" alt="Flick & Puff logo"/>
+      <span class="brand__name">Flick &amp; Puff</span>
+    </a>
+    <nav class="nav">
+      <a href="#shop">Shop</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#blog">Cozy Ideas</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn btn--ghost">Contact</a>
+      <button id="cartBtn" class="cart" aria-label="Open cart">
+        <span class="cart__icon">🛒</span>
+        <span id="cartCount" class="cart__count">0</span>
+      </button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+  </header>
 
-<header>
-  <div class="logo">
-    <img src="https://github.com/JuantxoCL/Data-Science/blob/main/FLICKANDPUFFLOGO.png?raw=true" alt="Flick and Puff Logo">
-  </div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">Cozy Ideas</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="hero__img" role="img" aria-label="Warm cozy living room with blanket, string lights and popcorn"></div>
+    <div class="hero__content">
+      <h1>Cinematic Hygge, Delivered</h1>
+      <p>Blankets, lights, mugs, and more—everything for the perfect night in.</p>
+      <div class="hero__cta">
+        <a href="#bundles" class="btn">Shop Bundles</a>
+        <a href="#blog" class="btn btn--ghost">Get Ideas</a>
+      </div>
+    </div>
+  </section>
 
-<section class="blog-hero">
-  <h1>Cozy Movie Night Ideas</h1>
-  <p>Tips, playlists, and inspiration for your perfect night in.</p>
-</section>
+  <!-- Shop / Featured products -->
+  <section id="shop" class="section">
+    <div class="section__head">
+      <h2>Ambience, Snacks &amp; Extras</h2>
+      <p>Create your cozy corner in minutes.</p>
+    </div>
+    <div class="grid products">
+      <!-- Product 1 -->
+      <article class="card product">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80" alt="Soft knit throw blanket on a couch"/>
+          <span class="badge">Best Seller</span>
+        </div>
+        <div class="card__body">
+          <h3>Plush Knit Throw</h3>
+          <p>Ultra-soft warmth with breathable weave—perfect for long marathons.</p>
+          <div class="price">$39</div>
+          <button class="btn add-to-cart" data-name="Plush Knit Throw">Add to cart</button>
+        </div>
+      </article>
 
-<section class="blog-list">
-  <article>
-    <img src="https://www.adventurebook.com/connect/wp-content/uploads/sites/2/2022/08/Shutterstock_479897929.png" alt="Romantic Cozy Night">
-    <h2>5 Romantic Cozy Night Ideas</h2>
-    <p>Create the perfect romantic evening with soft lighting, blankets, and movie classics.</p>
-    <button class="read-btn">Read More</button>
-  </article>
+      <!-- Product 2 -->
+      <article class="card product">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1200&q=80" alt="Warm string lights in a cozy room"/>
+          <span class="badge">Warm</span>
+        </div>
+        <div class="card__body">
+          <h3>Amber String Lights</h3>
+          <p>Dimmable LEDs with a soft golden glow for cinematic vibes.</p>
+          <div class="price">$18</div>
+          <button class="btn add-to-cart" data-name="Amber String Lights">Add to cart</button>
+        </div>
+      </article>
 
-  <article>
-    <img src="https://maplelodgefarms.com/wp-content/uploads/2019/02/iStock-872006222.jpg" alt="Family Movie Marathon">
-    <h2>Ultimate Family Movie Marathon Guide</h2>
-    <p>Snacks, movies, and fun activities to keep everyone happy and cozy all night long.</p>
-    <button class="read-btn">Read More</button>
-  </article>
+      <!-- Product 3 -->
+      <article class="card product">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80" alt="Popcorn in a big bowl"/>
+          <span class="badge">New</span>
+        </div>
+        <div class="card__body">
+          <h3>Popcorn Night Set</h3>
+          <p>Microwave popper + gourmet kernels + savory seasonings.</p>
+          <div class="price">$25</div>
+          <button class="btn add-to-cart" data-name="Popcorn Night Set">Add to cart</button>
+        </div>
+      </article>
 
-  <article>
-    <img src="https://i0.wp.com/blog.son-video.com/wp-content/uploads/2023/10/d1d04551-6a53-4d86-a320-1d18352c6580.jpg?w=1024&ssl=1" alt="Horror Night Setup">
-    <h2>How to Set Up the Perfect Horror Night</h2>
-    <p>From eerie lighting to themed snacks, here’s how to get spooky and cozy at the same time.</p>
-    <button class="read-btn">Read More</button>
-  </article>
-</section>
+      <!-- Product 4 -->
+      <article class="card product">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80" alt="Two steaming mugs of hot chocolate"/>
+        </div>
+        <div class="card__body">
+          <h3>Double-Wall Mug Duo</h3>
+          <p>Keep drinks warm, hands cool. Perfect for cocoa or tea.</p>
+          <div class="price">$22</div>
+          <button class="btn add-to-cart" data-name="Double-Wall Mug Duo">Add to cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2025 Flick and Puff | Cozy Nights Delivered</p>
-</footer>
+  <!-- Bundles -->
+  <section id="bundles" class="section section--dark">
+    <div class="section__head">
+      <h2>Ready-to-Watch Bundles</h2>
+      <p>Save more with curated kits for any mood.</p>
+    </div>
 
-<script src="script.js"></script>
+    <div class="grid bundles">
+      <!-- Horror Night -->
+      <article class="card bundle">
+        <div class="card__media collage">
+          <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=1200&q=80" alt="Projector screen in a dark room"/>
+          <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=800&q=80" alt="Candle light and cozy setup"/>
+          <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=800&q=80" alt="String lights close-up"/>
+        </div>
+        <div class="card__body">
+          <h3>Horror Night Kit</h3>
+          <ul class="bullets">
+            <li>Amber string lights</li>
+            <li>Plush throw</li>
+            <li>Popcorn set + “Jump-Scare Bingo” printable</li>
+          </ul>
+          <div class="price">$69</div>
+          <button class="btn add-to-cart" data-name="Horror Night Kit">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Romantic -->
+      <article class="card bundle">
+        <div class="card__media collage">
+          <img src="https://images.unsplash.com/photo-1459535653751-d571815e906b?auto=format&fit=crop&w=1200&q=80" alt="Cozy blanket texture"/>
+          <img src="https://images.unsplash.com/photo-1526045431048-2afe5b08b282?auto=format&fit=crop&w=800&q=80" alt="Two mugs with warm drink"/>
+          <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80" alt="Soft glowing lights"/>
+        </div>
+        <div class="card__body">
+          <h3>Romantic Night Kit</h3>
+          <ul class="bullets">
+            <li>Knit throw + logo pillow</li>
+            <li>Tealight candles (vanilla)</li>
+            <li>Playlist QR: “Soft Evening”</li>
+          </ul>
+          <div class="price">$79</div>
+          <button class="btn add-to-cart" data-name="Romantic Night Kit">Add to cart</button>
+        </div>
+      </article>
+
+      <!-- Family -->
+      <article class="card bundle">
+        <div class="card__media collage">
+          <img src="https://images.unsplash.com/photo-1486591978090-1cf2d8b29f83?auto=format&fit=crop&w=1200&q=80" alt="Family cozy living room"/>
+          <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80" alt="Popcorn bowl"/>
+          <img src="https://images.unsplash.com/photo-1546549039-49ec6f6b88cc?auto=format&fit=crop&w=800&q=80" alt="Soft pillows on a couch"/>
+        </div>
+        <div class="card__body">
+          <h3>Family Night Kit</h3>
+          <ul class="bullets">
+            <li>Popcorn set + snack tray</li>
+            <li>2× floor cushions</li>
+            <li>Printable scorecards for kids</li>
+          </ul>
+          <div class="price">$89</div>
+          <button class="btn add-to-cart" data-name="Family Night Kit">Add to cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blog / Cozy Ideas -->
+  <section id="blog" class="section">
+    <div class="section__head">
+      <h2>Cozy Ideas &amp; Playlists</h2>
+      <p>Quick tips you can use tonight.</p>
+    </div>
+
+    <div class="grid blog">
+      <article class="card post">
+        <img class="card__media" src="https://images.unsplash.com/photo-1535016120720-40c646be5580?auto=format&fit=crop&w=1200&q=80" alt="Cozy living room with blankets and lights"/>
+        <div class="card__body">
+          <h3>5 Instant Ways to Hygge Your Movie Corner</h3>
+          <p class="excerpt">Fairy lights, throws, scent, and a simple tray—here’s a 10-minute setup...</p>
+          <button class="btn read-more" data-post="post1">Read more</button>
+        </div>
+      </article>
+
+      <article class="card post">
+        <img class="card__media" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Headphones and a phone with a playlist"/>
+        <div class="card__body">
+          <h3>Playlists for Every Mood</h3>
+          <p class="excerpt">Romantic, rainy-day lofi, or family fun—stream our curated sets...</p>
+          <button class="btn read-more" data-post="post2">Read more</button>
+        </div>
+      </article>
+
+      <article class="card post">
+        <img class="card__media" src="https://images.unsplash.com/photo-1464638681273-0962e9b53566?auto=format&fit=crop&w=1200&q=80" alt="Snacks and hot cocoa on a wooden tray"/>
+        <div class="card__body">
+          <h3>Snacks That Feel Like a Hug</h3>
+          <p class="excerpt">From cocoa to caramel corn—comfort bites to match your lineup...</p>
+          <button class="btn read-more" data-post="post3">Read more</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Simple modal for blog content -->
+    <dialog id="postModal">
+      <article class="modal">
+        <button id="closeModal" class="modal__close" aria-label="Close">✕</button>
+        <h3 id="modalTitle">Post title</h3>
+        <p id="modalBody">Full post content will appear here.</p>
+      </article>
+    </dialog>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--dark">
+    <div class="section__head">
+      <h2>What Night-In People Say</h2>
+      <p>Real cozy converts.</p>
+    </div>
+    <div class="grid quotes">
+      <figure class="quote">
+        <blockquote>“Our living room looks like a tiny cinema now. The lights + blanket combo is perfection.”</blockquote>
+        <figcaption>— Alina R.</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“The Romantic Kit was our best anniversary idea. The playlist QR was a sweet touch.”</blockquote>
+        <figcaption>— Marco &amp; Dani</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>“Kids stayed happy through two movies. That popcorn set is a winner.”</blockquote>
+        <figcaption>— Priya S.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <h2>About Flick &amp; Puff</h2>
+      <p>We curate simple, warm essentials for effortless movie nights at home.</p>
+    </div>
+    <div class="about">
+      <p>From blankets and lights to snack gear and themed printables, we test what we list so your night-in just… works. Less fuss, more cozy.</p>
+    </div>
+  </section>
+
+  <section class="section newsletter" id="contact">
+    <div class="section__head">
+      <h2>Get Cozy Ideas in Your Inbox</h2>
+      <p>1–2 emails/month. No spam, only warm vibes.</p>
+    </div>
+    <form id="newsletterForm" class="form">
+      <label for="email" class="sr-only">Email</label>
+      <input id="email" type="email" placeholder="you@example.com" required>
+      <button class="btn" type="submit">Subscribe</button>
+      <span id="formMsg" class="form__msg" aria-live="polite"></span>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Flick &amp; Puff — Cozy Nights Delivered</p>
+    <nav class="footer-links">
+      <a href="#shop">Shop</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#blog">Cozy Ideas</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
