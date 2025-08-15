@@ -30,7 +30,7 @@ body{
 }
 .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink)}
 .brand__logo {
-  max-height: 90px;   /* más grande en escritorio */
+  height: clamp(64px, 8vw, 120px);  /* mínimo 64px, máximo 120px, crece con el viewport */
   width: auto;
   display: block;
 }
@@ -75,13 +75,13 @@ body{
 
 @media (max-width: 960px){
   .products > *, .bundles > *, .blog > *, .quotes > *{grid-column:span 6}
-  .brand__logo{height:70px}
+  .brand__logo { height: clamp(56px, 10vw, 90px); }
 }
 @media (max-width: 640px){
   .products > *, .bundles > *, .blog > *, .quotes > *{grid-column:span 12}
   .nav{display:none}
   .hamburger{display:block}
-  .brand__logo{height:55px}
+  .brand__logo { height: clamp(48px, 12vw, 70px); }
 }
 
 .card{
