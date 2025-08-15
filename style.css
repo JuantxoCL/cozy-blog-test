@@ -1,13 +1,14 @@
 :root{
-  --bg:#111216;              /* deep charcoal (cinema) */
-  --card:#1a1c21;            /* dark card */
-  --ink:#f6f1e9;             /* soft ivory text */
-  --muted:#b7aba0;           /* muted text */
-  --accent:#ffb44c;          /* warm amber */
-  --accent-2:#c77c7c;        /* muted rose */
-  --surface:#fff8f0;         /* light section */
-  --shadow:0 10px 25px rgba(0,0,0,.25);
+  --bg: #fdf6f0;        /* crema muy suave */
+  --card: #fff1e6;      /* color de tarjeta cálido */
+  --ink: #3c2f2f;       /* marrón suave para texto principal */
+  --muted: #7a665c;     /* gris/marrón para textos secundarios */
+  --accent: #f7a072;    /* naranja cálido para botones y highlights */
+  --accent-2: #e6b89c;  /* rosa/melocotón suave para detalles */
+  --surface: #ffffff;   /* secciones claras */
+  --shadow: 0 10px 25px rgba(0,0,0,.15); /* sombra más suave */
 }
+
 
 *{box-sizing:border-box}
 html,body{scroll-behavior:smooth}
