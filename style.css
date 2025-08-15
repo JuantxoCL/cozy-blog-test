@@ -1,13 +1,14 @@
 :root{
-  --bg: #fdf6f0;        /* crema muy suave */
-  --card: #fff1e6;      /* color de tarjeta cálido */
-  --ink: #3c2f2f;       /* marrón suave para texto principal */
-  --muted: #7a665c;     /* gris/marrón para textos secundarios */
-  --accent: #f7a072;    /* naranja cálido para botones y highlights */
-  --accent-2: #e6b89c;  /* rosa/melocotón suave para detalles */
-  --surface: #ffffff;   /* secciones claras */
-  --shadow: 0 10px 25px rgba(0,0,0,.15); /* sombra más suave */
+  --bg: #f5eee6;        /* crema cálida tipo lino */
+  --card: #e8ded3;      /* beige/madera suave */
+  --ink: #42291f;       /* marrón chocolate para texto */
+  --muted: #7a5a45;     /* marrón medio para textos secundarios */
+  --accent: #d9825f;    /* terracota/naranja cálido para botones y destacados */
+  --accent-2: #c69c83;  /* arena suave para detalles */
+  --surface: #fffaf3;   /* blanco cálido para secciones */
+  --shadow: 0 8px 20px rgba(66,41,31,.15); /* sombra cálida y suave */
 }
+
 
 
 *{box-sizing:border-box}
